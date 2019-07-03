@@ -26,7 +26,7 @@ SECRET_KEY="cc02aef9105ff9866e82c3e98c0c4b6ccb6b61ecf10ccac5"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['parseja-btre.herokuapp.com']
+ALLOWED_HOSTS = ['http://parseja-btre.herokuapp.com','localhost']
 
 
 # Application definition
