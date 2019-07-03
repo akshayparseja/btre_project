@@ -20,12 +20,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '0+%^0!o)e9vh&y^#kr3q6x*s-sjbr44zd224v+zo@ft*ujth^w'
-
-# SECURITY WARNING: don't run with debug turned on in production!
+#SECRET_KEY = '0+%^0!o)e9vh&y^#kr3q6x*s-sjbr44zd224v+zo@ft*ujth^w'
+SECRET_KEY=os.environ.get('SECRET_KEY')# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['parseja-btre.herokuapp.com']
 
 
 # Application definition
@@ -145,6 +144,6 @@ MESSAGE_TAGS = {
 #email config
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
-EMAIL_HOST_USER='akshayparseja@gmail.com'
-EMAIL_HOST_PASSWORD='aakksshh250426'
+EMAIL_HOST_USER=os.environ.get('akshayparseja@gmail.com')
+EMAIL_HOST_PASSWORD=os.environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS=True   
