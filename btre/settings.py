@@ -21,7 +21,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 #SECRET_KEY = '0+%^0!o)e9vh&y^#kr3q6x*s-sjbr44zd224v+zo@ft*ujth^w'
-SECRET_KEY=os.environ.get('SECRET_KEY')
+#SECRET_KEY=os.environ.get('SECRET_KEY')
+SECRET_KEY="cc02aef9105ff9866e82c3e98c0c4b6ccb6b61ecf10ccac5"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -145,6 +146,6 @@ MESSAGE_TAGS = {
 #email config
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
-EMAIL_HOST_USER=os.environ.get('akshayparseja@gmail.com')
-EMAIL_HOST_PASSWORD=os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_USER='akshayparseja@gmail.com'
+EMAIL_HOST_PASSWORD='aakksshh250426'
 EMAIL_USE_TLS=True   
